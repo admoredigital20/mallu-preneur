@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class=" p-4 bg-header" style="background-image: url(./public/assets/img/TOP2.jpg);">
+  <header class=" p-4 bg-header" style="background-image: url(./public/assets/img/TOP2.jpg);" id="home">
     <div class="row">
       <div class="col-md-6 col-9 p-3 pl-5">
         <img src="./public/assets/img/Logo.png" alt="Mallupreneur" class="logo-img">
@@ -33,10 +33,10 @@
                 <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" href="#">Services</a>
+                <a class="nav-link active text-white" href="#service">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">About</a>
+                <a class="nav-link active text-white" aria-current="page" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active text-white" href="#">Contact</a>
@@ -59,8 +59,8 @@
 
       </div>
     
-      <form class="col-md-6 login-form offset-md-1"  id="submit-form" action="" method="post">
-        <h1>Contact Us</h1>
+      <form class="col-md-6 login-form offset-md-1"  id="submit-form" action="" method="post" >
+        <h1>Join our community</h1>
         <div class="col-md-12 sendMsg">
           <h5>Send Us a Message</h5>
         </div>
@@ -108,7 +108,7 @@
   <!-- <section style="height: 150px;background-color:azure;">
 
       </section> -->
-  <section>
+  <section id="about">
     <div class="row about">
       <div class="col-md-6 col-xs-6">
         <img src="./public/assets/img/abt-img.png" alt="about image" class="abt-img">
@@ -151,7 +151,7 @@
       </section>  -->
 
 
-  <section class="bsns">
+  <section class="bsns" id="service">
     <div class=" business">
       <h1 class="bsn-font">Business</h1>
     </div>
@@ -225,16 +225,16 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3 ft-link">
           <p>
-            <a href="#!">Home</a>
+            <a href="#home">Home</a>
           </p>
           <p>
-            <a href="#!">About Us</a>
+            <a href="#about">About Us</a>
           </p>
           <p>
-            <a href="#!">Services</a>
+            <a href="#service">Services</a>
           </p>
           <p>
-            <a href="#!">Contact Us</a>
+            <a href="#home">Contact Us</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -424,7 +424,7 @@
             success:function (response){
                 alert("Form submitted successfully")
                 window.location.reload()
-                // window.location.href="thankyou.html"
+                // window.location.href="www.instagram.com/mallu_preneur"
             },
             error:function (err){
                 alert("Something Error")

@@ -126,6 +126,9 @@ margin-top: 55px;
 .abt-img {
     width: 100%;
 }
+
+
+}
 .bsns-pstn{
     position: absolute;
     width: 225px;
@@ -479,3 +482,19 @@ body {
         margin-top: 610px;
     }
   }
+  @media only screen and(max-width:550px){
+    .abt-img {
+        margin-top: -70px !important;
+    }
+}
+
+@media only screen and (max-width: 419px){
+    .about {
+        margin-top: 468px;
+    }
+}
+@media only screen and (max-width: 410px){
+    .bsns-img {
+        margin-top: 448px;
+    }
+}
