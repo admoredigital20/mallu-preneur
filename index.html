@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class=" p-4 bg-header" style="background-image: url(./public/assets/img/TOP2.jpg);" id="home">
+  <header class=" p-4 bg-header" style="background-image: url(./public/assets/img/TOP2.jpg);">
     <div class="row">
       <div class="col-md-6 col-9 p-3 pl-5">
         <img src="./public/assets/img/Logo.png" alt="Mallupreneur" class="logo-img">
@@ -33,10 +33,10 @@
                 <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" href="#service">Services</a>
+                <a class="nav-link active text-white" href="#">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#about">About</a>
+                <a class="nav-link active text-white" aria-current="page" href="#">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active text-white" href="#">Contact</a>
@@ -58,9 +58,9 @@
         </div>
 
       </div>
-    
-      <form class="col-md-6 login-form offset-md-1"  id="submit-form" action="" method="post" >
-        <h1>Join our community</h1>
+
+      <form class="col-md-6 login-form offset-md-1" id="submit-form" action="" method="post">
+        <h1>Contact Us</h1>
         <div class="col-md-12 sendMsg">
           <h5>Send Us a Message</h5>
         </div>
@@ -71,18 +71,18 @@
         </div>
         <div class="row">
           <div class="col-md-12 phone-no">
-            <input type="number" class="inputField" name="phonenumber" id="phonenumber" placeholder="Phone number">
+            <input type="text" class="inputField" name="phonenumber" id="phonenumber" placeholder="Phone number">
           </div>
         </div>
         <p class="p-com">Preffered Method of Communcation</p>
         <div class="row">
           <div class="col-md-3 rd-col">
-            <input type="radio" id="email" name="email" value="30">
+            <input type="radio" id="email" name="ep" value="30">
             <label class="rd-msg" for="email">Email</label>
 
           </div>
           <div class="col-md-3 rd-col">
-            <input type="radio" id="number" name="phone-no" value="30">
+            <input type="radio" id="number" name="ep" value="30">
             <label class="rd-msg" for="number">Phone</label>
 
           </div>
@@ -108,8 +108,8 @@
   <!-- <section style="height: 150px;background-color:azure;">
 
       </section> -->
-  <section id="about">
-    <div class="row about">
+  <section class="new-abt-cont">
+    <!-- <div class="row about">
       <div class="col-md-6 col-xs-6">
         <img src="./public/assets/img/abt-img.png" alt="about image" class="abt-img">
       </div>
@@ -126,6 +126,22 @@
 
       </div>
 
+    </div> -->
+
+    <div class="row new-about">
+      <div class="col-md-6">
+        <img src="./public/assets/img/abt-img.png" alt="about image">
+      </div>
+    </div>
+    <div class="row new-abt-content">
+      <div class="col-md-8 offset-md-4 cont-box">
+        <h4>ABOUT <span>US</span></h4>
+        <p class="about-p">MalluPreneur is your one-stop solution for learning, understanding and building business. We
+          help you learn how to be an entrepreneur. You can find topics like how to develop unique ideas, start the
+          business, market and scale it across all our platforms. We bring in the knowledge that will help you make more
+          money and be successful in life. You can find us hanging out with entrepreneurs and experts in various fields
+          talk about business and money. Join our community today and learn how to be your own boss!</p>
+      </div>
     </div>
   </section>
   <!-- <section>
@@ -151,11 +167,11 @@
       </section>  -->
 
 
-  <section class="bsns" id="service">
+  <section class="bsns">
     <div class=" business">
       <h1 class="bsn-font">Business</h1>
     </div>
-    <div class="div bsns-img" style="background-image: url(./public/assets/img/bsnconsult-img.png);">
+    <div id="bsns-img" class="div bsns-img" style="background-image: url(./public/assets/img/bsnconsult-img.png);">
       <h3 id="bsns-content">Business consulting</h3>
     </div>
     <div class="bsns-inherit row">
@@ -192,20 +208,20 @@
           <h2 class="font-weight-bold text-white text-center">Stay Tuned</h2>
           <h6 class="text-black-50 mb-5 text-color text-center">Subscribe to our newsletter and never miss our latest
             news.</h6>
-          <form class="form-group bg-white border rounded px-2 py-2 mb-2"  id="submit-forms" action="" method="post">
+          <form class="form-group bg-white border rounded px-2 py-2 mb-2" id="submit-forms" action="" method="post">
             <div class="row">
-              
+
               <div class="col">
-                 <input type="email" id="email"  name="email"
+                <input type="email" id="email" name="email"
                   class="form-control pl-3 shadow-none bg-transparent border-0" placeholder="Enter your email address">
               </div>
-              <div class="col-auto"> 
-                <button type="submit" class="btn btn-block btn-dark"><i
-                    class="fa fa-paper-plane-o mr-2"></i>Get notified
+              <div class="col-auto">
+                <button type="submit" class="btn btn-block btn-dark"><i class="fa fa-paper-plane-o mr-2"></i>Get
+                  notified
                 </button>
               </div>
             </div>
-          </form> 
+          </form>
           <span class="mb-4 text-color">No spam, notifications only about latest updates.</span>
         </div>
       </div>
@@ -225,16 +241,16 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3 ft-link">
           <p>
-            <a href="#home">Home</a>
+            <a href="#!">Home</a>
           </p>
           <p>
-            <a href="#about">About Us</a>
+            <a href="#!">About Us</a>
           </p>
           <p>
-            <a href="#service">Services</a>
+            <a href="#!">Services</a>
           </p>
           <p>
-            <a href="#home">Contact Us</a>
+            <a href="#!">Contact Us</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -243,15 +259,12 @@
 
         <!-- Grid column -->
         <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3 ft-link">
-
           <p>
             <a href="#!">Contact Us</a>
           </p>
-          <p>
-            <img src="./public/assets/img/call.png" alt=""><a href="#!">+91 70126 96630<br class="left">+91 89215 67593</a>
-          </p>
           <p class="loc-p">
-            <img src="./public/assets/img/location.png" alt=""><a href="#!">Lorem ipsum, or lipsum as it is</a>
+            <img src="./public/assets/img/call.png" alt=""><a href="#!">+91 70126 96630<br class="left">+91 89215
+              67593</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -270,10 +283,12 @@
             <a href="">Follow Us</a>
           </p>
           <div class="ft-sm">
-            <img src="./public/assets/img/twitter.png" alt="">
-            <img src="./public/assets/img/insta.png" alt="">
-            <img src="./public/assets/img/facebook.png" alt="">
-            <img src="./public/assets/img/linked.png" alt="">
+            <a href="http://www.instagram.com/mallu_preneur" target="_blank"><img src="./public/assets/img/insta.png"
+                alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100073473541264" target="_blank"><img
+                src="./public/assets/img/facebook.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCXYiQfMiGji8XbkmYw5uqXA" target="_blank"><img
+                src="./public/assets/img/youtube.png" alt=""></a>
           </div>
 
         </div>
@@ -282,7 +297,12 @@
       </div>
       <!-- Footer links -->
 
-      <hr>
+      <hr class="hr-cp">
+      <div class="row">
+        <div class="col-md-12 d-flex copywrite-ad">
+          <p>© 2021 MalluPreneur | All Rights Reserved | Designed By Admore Digital</p>
+        </div>
+      </div>
 
 
     </div>
@@ -415,42 +435,42 @@
 
 
   <script>
-    $("#submit-form").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbwCvLGwWijYKlS9nsJ3DkWu8kWAs0RnFBO1Xo3haKTzBAKUId1wFXTA9BGAFyVeolTG/exec",
-            data:$("#submit-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Form submitted successfully")
-                window.location.reload()
-                // window.location.href="www.instagram.com/mallu_preneur"
-            },
-            error:function (err){
-                alert("Something Error")
+    $("#submit-form").submit((e) => {
+      e.preventDefault()
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbwq9DI4SZcRMvY1CPftah1QQzAEVhH39a-pe_915i0paZuGKvRyAz_2bT5yi8_oTtSpmA/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+          alert("Form submitted successfully")
+          window.location.reload()
+          // window.location.href="thankyou.html"
+        },
+        error: function (err) {
+          alert("Something Error")
 
-            }
-        })
+        }
+      })
     })
 
-    $("#submit-forms").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbxRD8CxDchxVTOS6TAc5a0N40Ke9vjXa3AtVZXZo7C3_LhyuQ31qNIi0gA7uuKxuhdpsA/exec",
-            data:$("#submit-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Form submitted successfully")
-                window.location.reload()
-                // window.location.href="thankyou.html"
-            },
-            error:function (err){
-                alert("Something Error")
+    $("#submit-forms").submit((e) => {
+      e.preventDefault()
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbwq9DI4SZcRMvY1CPftah1QQzAEVhH39a-pe_915i0paZuGKvRyAz_2bT5yi8_oTtSpmA/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+          alert("Form submitted successfully")
+          window.location.reload()
+          // window.location.href="thankyou.html"
+        },
+        error: function (err) {
+          alert("Something Error")
 
-            }
-        })
+        }
+      })
     })
-</script>
+  </script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--

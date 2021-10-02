@@ -126,9 +126,6 @@ margin-top: 55px;
 .abt-img {
     width: 100%;
 }
-
-
-}
 .bsns-pstn{
     position: absolute;
     width: 225px;
@@ -211,9 +208,11 @@ body{
 }
 @media only screen and (max-width: 800px){
     .bsns-img{
-        margin-top: 350px;
+        margin-top: 40px;
+        height: 210px;
     } 
 }
+
 .bsns{
     margin-top: 140px;
 }
@@ -233,6 +232,10 @@ body{
     margin-right: calc(var(--bs-gutter-x) * -.5);
     margin-left: calc(var(--bs-gutter-x) * -.5);
 }
+
+.new-about img {
+    display: block;
+}
 @media only screen and (min-width: 1000px) {
     .bsns-inherit img {
       width: 33.3333333333%;
@@ -244,6 +247,19 @@ body{
       width: 100%;
     }
   }
+  @media only screen and (max-width: 780px) {
+    .new-abt-cont {
+        margin-top: 560px;
+    }
+    .bsns {
+        margin-top: 40px;
+    }
+    .new-about img {
+        width: 100%;    
+    }
+  }
+
+
 .bg-img{
     background-image: url(img/newsletter_bg.png);
 }
@@ -358,6 +374,8 @@ body {
     font-size: 45px;
     color: #fff;
     font-weight: 700;
+    background: #00000099;
+
 }
 
 .bsns-inherit h3{
@@ -460,6 +478,7 @@ body {
 
 .loc-p img {
     height: fit-content;
+    margin-top: 10px;
 }
 
 .ft-sm {
@@ -478,23 +497,72 @@ body {
     .about {
         margin-top: 530px;
     }
-    .bsns {
-        margin-top: 610px;
-    }
   }
-  @media only screen and(max-width:550px){
-    .abt-img {
-        margin-top: -70px !important;
-    }
+
+
+  .new-abt-cont {
+      position: relative;
+  }
+
+  .new-abt-content {
+      position: absolute;
+  }
+
+  .cont-box {
+    border-radius: 60px 0px 0px 60px;
+    box-shadow: -4px -4px 10px rgb(0 0 0 / 10%), 4px 4px 10px rgb(0 0 0 / 15%);
+    background-color: #fff;
+    height: 500px;
+    align-self: center;
+    overflow: hidden;
+  }
+
+
+  .new-about {
+      margin-top: 100px;
+  }
+
+  .new-about img {
+    height: 600px;
+  }
+
+  .new-abt-content {
+    height: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .new-abt-content h4 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+    margin-top: 60px;
+}
+.new-abt-content span {
+    text-align: center;
+    font-family: signature;
+    color: #FFC700;
+}
+.about-p{
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    height: 400px;
+    overflow-y: scroll;
+    position: absolute;
 }
 
-@media only screen and (max-width: 419px){
-    .about {
-        margin-top: 468px;
-    }
+
+.copywrite-ad {
+    justify-content: center;
 }
-@media only screen and (max-width: 410px){
-    .bsns-img {
-        margin-top: 448px;
-    }
+.copywrite-ad p {
+    justify-content: center;
+    color: #fff;
+}
+
+.hr-cp {
+    background: #fff;
 }
